@@ -1,0 +1,20 @@
+
+<nav class="navbar navbar-dark bg-dark">
+   
+    <!-- <a routerLink="/signup"> login</a> -->
+    <li class="nav-item">
+       <a *ngIf="status==false" class="btn btn-dark navbar-brand" routerLink="/login">Login/Signup</a> 
+        <a *ngIf="status==true" class="btn btn-dark navbar-brand" routerLink="/login">{{mail}}</a> 
+        <a class=" img navbar-brand"  routerLink="" >
+        <img src="https://penji.co/wp-content/uploads/2019/06/snapdeal-ecommerce-logo.jpg" height="50px">
+       </a>
+       <a class=" img navbar-brand img2"  routerLink="cart" >
+        <img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-9.jpg" height="50px">
+       </a>
+       </li>
+       <li class=" add btn-dark navbar-brand">
+        <a class="nav-link " href="#" style="color: bisque;">Select address</a>
+      </li>
+  </nav>
+
+ 

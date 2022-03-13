@@ -1,0 +1,27 @@
+.navbar{
+    height: 48px;
+   }
+   .img{
+     top: -14%;
+     left: 0%;
+     position: absolute;
+   }
+   .btn{
+       right: 0%;
+       top: 0%;
+       height:98%;
+       position: absolute;
+       width: 10%;
+       text-align: center;
+   }
+   .add{
+     left: 10%;
+     top: -18%;
+     position: absolute;
+     text-align: left;
+   }
+   .img2{
+     top: -14px;
+     left:1100px;
+     position: absolute;
+   }

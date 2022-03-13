@@ -1,0 +1,84 @@
+<!-- <div class="container d-flex ">
+    <div class="row">
+        <div   class="col-md-5 mt-1 hei" *ngFor="let item of item">
+            <div class="card  ">
+                <div class="card-body">
+                    <div class="card-img-actions"> <img src="{{item.product_img}}"  class="card-img img-fluid" width="900%" height="500" alt=""> </div>
+                </div>
+                <div class="card-body bg-dark  heigh" style="font-size:small  ">
+                    <div class="mb-2">
+                        <h6 > <a [routerLink]="['/product',item.product_ID]" class="text-default mb-2" data-abc="true">{{item.product_title}}</a> </h6>
+                    </div>
+                    <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                    <div class="text-muted mb-3">34 reviews</div>
+                   <div class="row ml-0">
+                    <h3 class="mb-0 " style="color: aliceblue;">{{item.product_price}}</h3>
+                    
+                   </div>
+                    
+                  
+                </div>
+            </div>
+        </div>
+        
+    </div>
+  </div> -->
+
+
+  <div class="container px-4 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="col-5">
+            <h4 class="heading">Shopping cart</h4>
+        </div>
+        <div class="col-7   ">
+            <div class="row text-right">
+                <div class="col-2">
+                    <h6 class="mt-2">product</h6>
+                </div>
+                <div class="col-2">
+                    <h6 class="mt-2">Quantity</h6>
+                </div>
+                <div class="col-2">
+                    <h6 class="mt-2">Price</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center border-top" *ngFor="let item of item">
+        <div class="col-5">
+            <div class="row d-flex">
+                <div class="book"> <img src="{{item.product_img}}" height ="200"class="book-img"> </div>
+                <!-- <div class="my-auto flex-column d-flex pad-left">
+                    <h6 class="mob-text">title</h6>
+                    <p class="mob-text">Daniel Kahneman</p>
+                </div> -->
+            </div>  
+        </div>
+        <div class="my-auto col-7">
+            <div class="row text-right">
+                <div class="col-2">
+                    <p class="mob-text">{{item.product_title}}</p>
+                </div>
+                <div class="col-2">
+                    <div class="row d-flex justify-content-end px-3">
+                        <p class="mb-0" id="cnt1">{{item.Quantity}}</p>
+                        <div class="d-flex flex-column plus-minus"> <span class="vsm-text plus">+</span> <span class="vsm-text minus">-</span> </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h6 class="mob-text">{{item.product_price*item.Quantity}}</h6>
+                </div>
+                <div class="col-2 mt--1">
+                    <button class="btn btn-primary"(click)="Delete(item.product_ID,item.product_price*item.Quantity)">Delete</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-2 mt--1">
+        <button class="btn btn-primary">{{sum}}</button>
+        <button class="btn btn-success"(click)="mes()">BUY</button>
+    </div>
+    
+   
+</div>

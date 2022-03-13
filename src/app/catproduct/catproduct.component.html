@@ -1,0 +1,25 @@
+<div class="container d-flex ">
+    <div class="row">
+        <div   class="col-md-3 mt-1 hei" *ngFor="let item of item">
+            <div class="card  ">
+                <div class="card-body">
+                    <div class="card-img-actions"> <img src="{{item.product_img}}"  class="card-img img-fluid" width="900%" height="500" alt=""> </div>
+                </div>
+                <div class="card-body bg-dark  heigh" style="font-size:small  ">
+                    <div class="mb-2">
+                        <h6 > <a [routerLink]="['/product',item.product_ID]" class="text-default mb-2" data-abc="true">{{item.product_title}}</a> </h6>
+                    </div>
+                    <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                    <div class="text-muted mb-3">34 reviews</div>
+                   <div class="row ml-0">
+                    <h3 class="mb-0 " style="color: aliceblue;">{{item.product_price}}</h3>
+                    
+                   </div>
+                    
+                    <button type="button" class="btn bg-cart"   ><i class="fa fa-cart-plus mr-2"></i> Add to cart</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+  </div>
